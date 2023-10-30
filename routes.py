@@ -9,9 +9,9 @@ app = Bottle()
 sess = Session()
 app_sess = sess.create_session(app)
 
-@app.get('/static/<filename:path>')
-def static(filename):
-    return static_file(filename, root='./static')
+@app.get('/static/<filePath:path>')
+def static(filePath):
+    return static_file(filePath, root='./static')
 
 @app.route('/test')
 def test():
