@@ -25,7 +25,7 @@ class Books(Base):
     __tablename__ = 'books'
     id_ = Column('id', Integer, primary_key=True)
     name = Column('name',String(255))
-    volume = Column('Volume',String(255))
+    volume = Column('volume',String(255))
     author = Column('author',String(255))
     publisher = Column('publisher',String(255))
     memo = Column('memo',Text)
@@ -37,7 +37,7 @@ class BookUser(Base):
     user_id = Column('user_id', String(255), primary_key=True)
     passwd = Column('passwd', String(255), nullable=False)
     email = Column('email', String(255), nullable=False)
-    user_Shi = Column('user_Shi', String(255))
+    user_Shi = Column('user_shi', String(255))
     user_mei = Column('user_mei', String(255))
     delFlg = Column('del', Boolean)
 
